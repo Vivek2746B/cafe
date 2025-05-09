@@ -21,7 +21,7 @@ const Menu = () => {
       name: "Berry Pancakes",
       description: "Fluffy buttermilk pancakes with mixed berries",
       price: 10.99,
-      image: "/images/pancakes.jpg",
+      image: "/images/Pancakes.jpg",
       category: "breakfast"
     },
     {
@@ -29,7 +29,7 @@ const Menu = () => {
       name: "Masala Dosa",
       description: "Crispy rice crepe filled with spicy potato mash, served with chutney and sambar",
       price: 9.99,
-      image: "/images/masala-dosa.jpg",
+      image: "/images/Masala-Dosa.jpg",
       category: "breakfast"
     },
     
@@ -40,7 +40,7 @@ const Menu = () => {
       name: "Grilled Cheese",
       description: "3-cheese blend on artisan bread with tomato soup",
       price: 11.99,
-      image: "/images/grilled-cheese.jpg",
+      image: "/images/Grilled-cheese.jpg",
       category: "lunch"
     },
     {
@@ -48,7 +48,7 @@ const Menu = () => {
       name: "Chicken Panini",
       description: "Grilled chicken, pesto, and mozzarella",
       price: 13.99,
-      image: "/images/chicken-panini.jpg",
+      image: "/images/Chicken-Panini.jpg",
       category: "lunch"
     },
     {
@@ -56,7 +56,7 @@ const Menu = () => {
       name: "Pav Bhaji",
       description: "Spicy mashed vegetables served with buttered buns",
       price: 10.50,
-      image: "/images/pav-bhaji.jpg",
+      image: "/images/Pav-Bhaji.jpg",
       category: "lunch"
     },
    
@@ -66,7 +66,7 @@ const Menu = () => {
       name: "Espresso",
       description: "Single shot of our premium house blend",
       price: 3.50,
-      image: "/images/espresso.jpg",
+      image: "/images/Espresso.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -75,7 +75,7 @@ const Menu = () => {
       name: "Cappuccino",
       description: "Espresso with steamed milk and foam",
       price: 4.75,
-      image: "/images/cappuccino.jpg",
+      image: "/images/Cappuccino.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -84,7 +84,7 @@ const Menu = () => {
       name: "Latte",
       description: "Espresso with generous steamed milk",
       price: 5.25,
-      image: "/images/latte.jpg",
+      image: "/images/Latte.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -93,7 +93,7 @@ const Menu = () => {
       name: "Flat White",
       description: "Double espresso with microfoam",
       price: 5.50,
-      image: "/images/flat-white.jpg",
+      image: "/images/Flat-White.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -102,7 +102,7 @@ const Menu = () => {
       name: "Americano",
       description: "Espresso with hot water",
       price: 4.00,
-      image: "/images/americano.jpg",
+      image: "/images/Americano.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -111,7 +111,7 @@ const Menu = () => {
       name: "Mocha",
       description: "Espresso with chocolate and steamed milk",
       price: 5.75,
-      image: "/images/mocha.jpg",
+      image: "/images/Mocha.jpg",
       category: "drinks",
       subcategory: "coffee"
     },
@@ -120,7 +120,7 @@ const Menu = () => {
       name: "Affogato",
       description: "Espresso poured over vanilla gelato",
       price: 6.50,
-      image: "/images/affogato.jpg",
+      image: "/images/Affogato.jpg",
       category: "drinks",
       subcategory: "coffee"
     }
