@@ -1,0 +1,110 @@
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #f8f5f2; /* Warm cream background */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(107, 68, 35, 0.1); /* Coffee-colored shadow */
+    border: 1px solid #e0d7cc; /* Light coffee border */
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%234a2c12" fill-opacity="0.05" d="M30,20 Q50,0 70,20 T90,50 Q70,80 50,60 T10,50 Q30,30 50,40Z"/></svg>');
+    opacity: 0.3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #4a2c12; /* Dark coffee brown */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 14px 16px;
+    border: 1px solid #d4c8b8; /* Light coffee border */
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: #fffdfb; /* Off-white */
+    transition: all 0.3s ease;
+    color: #4a2c12; /* Dark coffee brown */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a78a6d; /* Latte color */
+    opacity: 0.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b5a2b; /* Caramel color */
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.15); /* Soft caramel glow */
+    background-color: #fff;
+}
+
+.form-group textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.btn-submit {
+    align-self: flex-start;
+    background-color: #8b5a2b; /* Rich caramel brown */
+    color: white;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(107, 68, 35, 0.2);
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #6b4423; /* Darker coffee brown */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(107, 68, 35, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.8rem;
+        margin: 1rem;
+    }
+    
+    .btn-submit {
+        width: 100%;
+        text-align: center;
+    }
+
+}

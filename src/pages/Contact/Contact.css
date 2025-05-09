@@ -1,0 +1,105 @@
+
+.contact-page {
+    padding: 4rem 0;
+    background-color: #f8f5f2; /* Warm cream background */
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    padding: 2.5rem;
+    background-color: #fffdfb; /* Off-white */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(107, 68, 35, 0.08); /* Coffee-colored shadow */
+    border: 1px solid #e0d7cc; /* Light coffee border */
+}
+
+.contact-info h1 {
+    color: #4a2c12; /* Dark coffee brown */
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.contact-info h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #8b5a2b; /* Caramel accent */
+}
+
+.contact-details h3 {
+    margin-top: 1.5rem;
+    color: #6b4423; /* Medium coffee brown */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.contact-details h3 svg {
+    color: #8b5a2b; /* Caramel color for icons */
+    font-size: 1.4rem;
+}
+
+.contact-details p {
+    color: #5c4a3a; /* Brownish gray */
+    margin-left: 2.2rem;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-map {
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(74, 44, 18, 0.1); /* Coffee shadow */
+    border: 1px solid #d4c8b8; /* Light coffee border */
+}
+
+/* Coffee-themed decorative elements */
+.contact-info::before {
+    content: '☕';
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    opacity: 0.1;
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+    
+    .contact-map {
+        height: 350px;
+        order: -1; /* Map on top for mobile */
+    }
+    
+    .contact-info {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 3rem 0;
+    }
+
+}

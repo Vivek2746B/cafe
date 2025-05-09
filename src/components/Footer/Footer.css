@@ -1,0 +1,102 @@
+
+.footer {
+    background-color: #4a2c12; /* Rich coffee bean brown */
+    color: #f0e6d9; /* Cream text */
+    padding: 4rem 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #c8a97e, #6f4e37, #c8a97e); /* Latte gradient */
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem;
+  }
+  
+  .footer-section h3, 
+  .footer-section h4 {
+    color: #c8a97e; /* Latte color */
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .footer-section h3::after,
+  .footer-section h4::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #c8a97e;
+  }
+  
+  .footer-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #e0d5c8;
+  }
+  
+  .footer-section a {
+    color: #e0d5c8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a:hover {
+    color: #c8a97e;
+    transform: translateX(5px);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(200, 169, 126, 0.2); /* Latte tint */
+    font-size: 0.9rem;
+    color: #c8a97e;
+  }
+  
+  /* Coffee bean decoration */
+  .footer::after {
+    content: "☕";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    opacity: 0.1;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1.5rem 2rem;
+    }
+    
+    .footer-section {
+      margin-bottom: 2rem;
+    }
+    
+    .footer-section h3, 
+    .footer-section h4 {
+      font-size: 1.2rem;
+    }
+  }

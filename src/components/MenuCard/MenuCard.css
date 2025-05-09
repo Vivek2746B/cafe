@@ -1,0 +1,100 @@
+
+/* Updated Cafe Menu Styles */
+.menu-card {
+    background: #f8f5f2; /* Light cream background */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(74, 44, 18, 0.08); /* Coffee brown shadow */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    position: relative;
+    border: 1px solid rgba(74, 44, 18, 0.1); /* Coffee brown border */
+}
+
+.menu-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(74, 44, 18, 0.12); /* Darker coffee brown shadow */
+}
+
+.menu-card-image {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    background-color: #e0d7cc; /* Light brown placeholder */
+}
+
+.menu-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card-image img {
+    transform: scale(1.05);
+}
+
+.menu-card-content {
+    padding: 1.8rem;
+    position: relative;
+}
+
+.menu-card h3 {
+    color: #4a2c12; /* Coffee bean brown */
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-card p {
+    color: #5c4a3a; /* Brownish gray */
+    margin: 0.8rem 0 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.menu-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px dashed #d4c8b8; /* Light brown divider */
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #6b4423; /* Darker caramel color */
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-add {
+    background-color: #8b5a2b; /* Caramel color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 5px rgba(74, 44, 18, 0.1); /* Coffee brown shadow */
+}
+
+.btn-add:hover {
+    background-color: #6b4423; /* Darker brown */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(74, 44, 18, 0.15); /* Coffee brown shadow */
+}
+
+/* Updated color variables */
+:root {
+    --coffee-brown: #4a2c12;
+    --caramel: #6b4423;
+    --latte-tan: #8b5a2b;
+    --light-cream: #f8f5f2;
+    --light-brown: #e0d7cc;
+
+}
